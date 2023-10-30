@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: rgb(19,180,193);
+    background: radial-gradient(circle, rgba(19,180,193,1) 27%, rgba(25,112,215,1) 130%);
+}
+h1{
+    text-align: center !important;
+    font-weight: 600 !important;
+    margin: 100px auto 50px !important;
+    color: #fff;
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    min-width: 100px;
+    max-width: 600px;
+    margin: auto;
+    height: 50px;
+}
+form input{
+    flex: 1;
+    height: 100%;
+    border: 0;
+    outline: 0;
+    background: #fff; 
+    color: black;
+    font-size: 18px;
+    padding: 0 30px;
+    border-radius: 8px 0 0 8px;
+}
+form button{
+    padding: 0 40px;
+    height: 100%;
+    background: #ff3929;
+    font-size: 18px;
+    border: 0;
+    outline: 0;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    cursor: pointer;
+}
+#showmorebtn{
+    background: #225f09b0;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    padding: 10px 20px;
+    border-radius: 4px ;
+    margin: 10px auto 100px;
+    cursor: pointer;
+    display: none;
+}
+#search-result{
+    width: 80%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-gap: 1rem;
+}
+#search-result img{
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* @media (min-width:490px)
+{
+    form{
+        width: 400px;
+    }
+} */
